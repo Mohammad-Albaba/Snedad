@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_above="@+id/start"
+    android:id="@+id/linearlistview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/start"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="btn_share"
+            android:background="@drawable/share1"
+            android:id="@+id/btn_share"
+            android:layout_margin="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <Button
+            android:onClick="btn_morapp"
+            android:layout_margin="10dp"
+            android:background="@drawable/apps2"
+            android:id="@+id/btn_apps"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <Button
+            android:onClick="btn_email"
+            android:id="@+id/btn_email"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/email2" />
+        <Button
+            android:onClick="btn_exit"
+            android:id="@+id/close2"
+            android:layout_margin="10dp"
+            android:background="@drawable/close1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
